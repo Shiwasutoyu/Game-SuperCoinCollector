@@ -1,0 +1,125 @@
+/* .container {
+  width: 100%;
+  background-color: aquamarine;
+} */
+
+/* .content {
+  background-color: aqua;
+  width: 70%;
+  margin: 0 auto;
+} */
+
+html {
+  touch-action: manipulation;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  margin: 0;
+}
+
+.game-disp {
+  background-color: lawngreen;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-area {
+  /* background-color: lavender; */
+  width: 80%;
+  height: 180px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-area2 {
+  /* background-color: lavender; */
+  width: 80%;
+  height: 60px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-left {
+  /* background-color: khaki; */
+  width: 40%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-right {
+  /* background-color: khaki; */
+  width: 40%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.move-btn1 {
+  background-color: brown;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+p {
+  color: orange;
+  font-size: 20px;
+  margin: 0;
+  line-height: 50px;
+}
+
+.move-btn2 {
+  background-color: brown;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+
+.a-btn {
+  background-color: brown;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.b-btn {
+  background-color: brown;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.resize-btn {
+  background-color: rgb(103, 103, 103);
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+
+.resize-btn p {
+  color: rgb(193, 193, 193);
+  font-size: 12px;
+  margin: 0;
+  line-height: 30px;
+}
+
+
+
+
