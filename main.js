@@ -199,6 +199,10 @@ function draw(){
 
 window.onload = function() {
   startTime = performance.now();
+
+  no_scaling();
+  mobile_no_scroll();
+
   // block.push(new Block(374, 10, 19));
   // block.push(new Block(374, 20, 19));
   mainLoop();
