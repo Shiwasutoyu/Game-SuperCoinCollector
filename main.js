@@ -12,8 +12,8 @@ let con = can.getContext("2d");
 vcan.width = SCREEN_SIZE_W;
 vcan.height = SCREEN_SIZE_H;
 
-can.width = SCREEN_SIZE_W*1;
-can.height = SCREEN_SIZE_H*1;
+can.width = SCREEN_SIZE_W*0.8;
+can.height = SCREEN_SIZE_H*0.8;
 
 con.mozimageSmoothingEnabled = false;
 con.msimageSmoothingEnabled = false;
@@ -190,7 +190,7 @@ function draw(){
   }
     
   //----仮想画面から実画面へ拡大転送-------
-  con.drawImage(vcan, 204, 248, SCREEN_SIZE_W, SCREEN_SIZE_H, 0, 0, SCREEN_SIZE_W*2, SCREEN_SIZE_H*2);
+  con.drawImage(vcan, 204, 248, SCREEN_SIZE_W, SCREEN_SIZE_H, 0, 0, SCREEN_SIZE_W*1.6, SCREEN_SIZE_H*1.6);
 }
 
 
@@ -201,7 +201,7 @@ window.onload = function() {
   startTime = performance.now();
 
   no_scaling();
-  // mobile_no_scroll();
+  
 
   // block.push(new Block(374, 10, 19));
   // block.push(new Block(374, 20, 19));
@@ -226,9 +226,9 @@ function mainLoop() {
     } 
 
     //-----------敵がランダムで出てくる、4ポイント------------
-    if(rand(1,500 ) == 1){
-      teki.push(new Teki(96, 35,34,0,0));     
-    };
+    // if(rand(1,500 ) == 1){
+    //   teki.push(new Teki(96, 35,34,0,0));     
+    // };
     // if(rand(1,1000 ) == 1){
     //   teki.push(new Teki(96, 5,24,0,0));     
     // };
