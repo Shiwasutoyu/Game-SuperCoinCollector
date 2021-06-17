@@ -19,11 +19,20 @@ body {
   margin: 0;
 }
 
+
 .game-disp {
   background-color: lawngreen;
+  width: 90%;
+  height: 69vh;
   position: absolute;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
+  
+}
+
+canvas {
+  /* transform: translateX(50%); */
 }
 
 .btn-area {
@@ -119,7 +128,5 @@ p {
   margin: 0;
   line-height: 30px;
 }
-
-
 
 
