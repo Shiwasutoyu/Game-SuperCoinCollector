@@ -12,8 +12,8 @@ let con = can.getContext("2d");
 vcan.width = SCREEN_SIZE_W;
 vcan.height = SCREEN_SIZE_H;
 
-can.width = SCREEN_SIZE_W*0.8;
-can.height = SCREEN_SIZE_H*0.8;
+can.width = SCREEN_SIZE_W*0.7;
+can.height = SCREEN_SIZE_H*0.7;
 
 con.mozimageSmoothingEnabled = false;
 con.msimageSmoothingEnabled = false;
@@ -190,7 +190,7 @@ function draw(){
   }
     
   //----仮想画面から実画面へ拡大転送-------
-  con.drawImage(vcan, 204, 248, SCREEN_SIZE_W, SCREEN_SIZE_H, 0, 0, SCREEN_SIZE_W*1.6, SCREEN_SIZE_H*1.6);
+  con.drawImage(vcan, 204, 248, SCREEN_SIZE_W, SCREEN_SIZE_H, 0, 0, SCREEN_SIZE_W*1.4, SCREEN_SIZE_H*1.4);
 }
 
 
