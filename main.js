@@ -226,9 +226,9 @@ function mainLoop() {
     } 
 
     //-----------敵がランダムで出てくる、4ポイント------------
-    // if(rand(1,500 ) == 1){
-    //   teki.push(new Teki(96, 35,34,0,0));     
-    // };
+    if(rand(1,500 ) == 1){
+      teki.push(new Teki(96, 35,34,0,0));     
+    };
     // if(rand(1,1000 ) == 1){
     //   teki.push(new Teki(96, 5,24,0,0));     
     // };
