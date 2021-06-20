@@ -232,18 +232,18 @@ function mainLoop() {
     } 
 
     //-----------敵がランダムで出てくる、4ポイント------------
-    if(rand(1,500 ) == 1){
+    if(rand(1,1000 ) == 1){
       teki.push(new Teki(96, 35,34,0,0));     
     };
-    // if(rand(1,1000 ) == 1){
-    //   teki.push(new Teki(96, 5,24,0,0));     
-    // };
-    // if(rand(1,1000 ) == 1){
-    //   teki.push(new Teki(96, 25,4,0,0));     
-    // };
-    // if(rand(1,1000 ) == 1){
-    //   teki.push(new Teki(96, 5,4,0,0));     
-    // };
+    if(rand(1,1000 ) == 1){
+      teki.push(new Teki(96, 5,34,0,0));     
+    };
+    if(rand(1,700 ) == 1){
+      teki.push(new Teki(96, 35,5,0,0));     
+    };
+    if(rand(1,700 ) == 1){
+      teki.push(new Teki(96, 5,5,0,0));     
+    };
 
     //----------定期的にハテナブロックでてくる----------
     if(rand(1,2000 ) == 1){
@@ -344,13 +344,24 @@ RightBTN.addEventListener("touchend", () =>{
 
 //------A & B----------
 
+// aBTN.addEventListener("click", () =>{
+//   if(gameRun == true){
+//     // keyb.ABUTTON = true;
+//     console.log("click"); 
+//     console.log(gameRun);
+//   }else{
+//     console.log("restart");
+//     console.log(gameRun);
+//     GAME_OVER = false;
+//     GAME_FINISH = false;
+//     gameRun = true;
+//     console.log(gameRun);
+//     // mainLoop();
+//   }
+// })
+
 aBTN.addEventListener("touchstart", () =>{
-  if(gameRun = true){
-    keyb.ABUTTON = true; 
-  }else{
-    gameRun = true;
-    mainLoop();
-  }
+  keyb.ABUTTON = true; 
 })
 
 bBTN.addEventListener("mousedown", () =>{
