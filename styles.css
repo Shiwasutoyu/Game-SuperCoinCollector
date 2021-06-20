@@ -17,10 +17,11 @@ body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   margin: 0;
+  background-color: rgb(37, 37, 37);
 }
 
 .game-disp {
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -30,9 +31,10 @@ body {
 }
 
 .btn-area {
-  /* background-color: lavender; */
+  /* background-color: rgb(173, 173, 199); */
   width: 80%;
   height: 180px;
+  max-width: 450px;
   position: absolute;
   top: 65%;
   left: 50%;
@@ -46,6 +48,7 @@ body {
   /* background-color: lavender; */
   width: 80%;
   height: 60px;
+  max-width: 450px;
   position: absolute;
   top: 85%;
   left: 50%;
@@ -74,21 +77,21 @@ body {
 }
 
 .move-btn1 {
-  background-color: brown;
+  background-color: rgb(71, 223, 205);
   width: 50px;
   height: 50px;
   text-align: center;
 }
 
 p {
-  color: orange;
+  color: rgb(117, 117, 117);
   font-size: 20px;
   margin: 0;
   line-height: 50px;
 }
 
 .move-btn2 {
-  background-color: brown;
+  background-color: rgb(71, 223, 205);
   width: 50px;
   height: 50px;
   text-align: center;
@@ -96,14 +99,14 @@ p {
 
 
 .a-btn {
-  background-color: brown;
+  background-color: rgb(71, 223, 205);
   width: 50px;
   height: 50px;
   text-align: center;
 }
 
 .b-btn {
-  background-color: brown;
+  background-color: rgb(71, 223, 205);
   width: 50px;
   height: 50px;
   text-align: center;
@@ -114,9 +117,25 @@ p {
   width: 50px;
   height: 30px;
   text-align: center;
+  margin: 20px;
 }
 
 .resize-btn p {
+  color: rgb(193, 193, 193);
+  font-size: 12px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.sizeup-btn {
+  background-color: rgb(103, 103, 103);
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+.sizeup-btn p {
   color: rgb(193, 193, 193);
   font-size: 12px;
   margin: 0;

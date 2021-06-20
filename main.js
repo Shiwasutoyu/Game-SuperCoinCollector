@@ -9,11 +9,16 @@ let can = document.getElementById("can");
 let con = can.getContext("2d");
 
 //-----------------
+
+let canSIZE = 0.7;
+
+let realSize = 1.4;
+
 vcan.width = SCREEN_SIZE_W;
 vcan.height = SCREEN_SIZE_H;
 
-can.width = SCREEN_SIZE_W*0.7;
-can.height = SCREEN_SIZE_H*0.7;
+can.width = SCREEN_SIZE_W*canSIZE;
+can.height = SCREEN_SIZE_H*canSIZE;
 
 con.mozimageSmoothingEnabled = false;
 con.msimageSmoothingEnabled = false;
@@ -122,7 +127,7 @@ function draw(){
   if(timeDispOut!=undefined){
     vcon.fillText(timeDispOut, 299, 275);
     vcon.font = " 16px 'Impact'";
-    vcon.fillText("s", 360, 275);
+    vcon.fillText(" s", 360, 275);
   }else{
     vcon.fillStyle = "white";
     vcon.fillText("S T A R T !!", 286, 275);
@@ -190,7 +195,7 @@ function draw(){
   }
     
   //----仮想画面から実画面へ拡大転送-------
-  con.drawImage(vcan, 204, 248, SCREEN_SIZE_W, SCREEN_SIZE_H, 0, 0, SCREEN_SIZE_W*1.4, SCREEN_SIZE_H*1.4);
+  con.drawImage(vcan, 204, 248, SCREEN_SIZE_W, SCREEN_SIZE_H, 0, 0, SCREEN_SIZE_W*realSize, SCREEN_SIZE_H*realSize);
 }
 
 
@@ -351,6 +356,20 @@ aBTN.addEventListener("touchend", () =>{
 bBTN.addEventListener("mouseup", () =>{
   keyb.ABUTTON = false;
 })
+
+//-----SIZE------
+// resizeBTN.addEventListener("touch", () =>{
+//   if(sizeUp == false){
+//     sizeUp = true; 
+//     canSIZE = 1;
+//     realSize = 2;
+//   }else{
+//     sizeUp = false;
+//     canSIZE = 0.7;
+//     realSize = 1.4;
+//   }
+
+// })
 
 
 

@@ -23,7 +23,7 @@ const RightBTN = document.getElementById("move-btn2");
 const aBTN = document.getElementById("a-btn");
 const bBTN = document.getElementById("b-btn");
 const resizeBTN = document.getElementById("resize-btn");
-// let sizeUp = false;
+// let sizeUp = true;
 
 
 
