@@ -239,10 +239,10 @@ function mainLoop() {
       teki.push(new Teki(96, 5,34,0,0));     
     };
     if(rand(1,700 ) == 1){
-      teki.push(new Teki(96, 35,5,0,0));     
+      teki.push(new Teki(96, 35,4,0,0));     
     };
     if(rand(1,700 ) == 1){
-      teki.push(new Teki(96, 5,5,0,0));     
+      teki.push(new Teki(96, 5,4,0,0));     
     };
 
     //----------定期的にハテナブロックでてくる----------
