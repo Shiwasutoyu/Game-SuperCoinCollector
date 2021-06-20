@@ -36,6 +36,7 @@ let timePlus20 = false;
 let timePlusC = 0;
 let coinGetC = 0;
 let fnishedC = 0;
+let gameRun = true;
 
 //-------集めたコインの数----------
 let collectedCoinCount = 0;
@@ -183,7 +184,7 @@ function draw(){
     vcon.font = "22px 'Impact'";
     vcon.fillStyle = "white";
     
-    vcon.fillText("G A M E  O V E R . . .", 260, 330);
+    vcon.fillText("G A M E  O V E R . .", 260, 330);
 
     vcon.font = "18px 'Impact'";
     vcon.fillText(collectedCoinCount, 342, 371);
@@ -270,10 +271,12 @@ function mainLoop() {
   }
   
   if(GAME_OVER){
+    gameRun = false;
     return;
   }
 
   if(GAME_FINISH){
+    gameRun = false;
     return;
   }
 
@@ -342,7 +345,12 @@ RightBTN.addEventListener("touchend", () =>{
 //------A & B----------
 
 aBTN.addEventListener("touchstart", () =>{
-  keyb.ABUTTON = true; 
+  if(gameRun = true){
+    keyb.ABUTTON = true; 
+  }else{
+    gameRun = true;
+    mainLoop();
+  }
 })
 
 bBTN.addEventListener("mousedown", () =>{
